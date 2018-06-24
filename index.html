@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -27,7 +28,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>VIDEOS</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a  onclick="w3_close(); document.querySelector('#abootme').scrollIntoView({ behavior: 'smooth' })" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="https://addons.mozilla.org/en-US/firefox/user/anonymous-fa3d467381293c70da8da30f3ab7e132/"  class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>MOZILLA DEV PAGE</a>
   </div>
   <div class="w3-panel w3-large">
@@ -180,7 +181,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <section id='about'>
 
   <div class="w3-container w3-padding-large w3-margin-left" style="margin-bottom:32px; ">
-    <h4><b>About Me</b></h4>
+    <h4 id='abootme'><b>About Me</b></h4>
     <p>I'm a coder. I like waffles. I make YouTube videos. I love cheese!!!! I don't like Cookie Clicker.</p>
     <hr>
     
