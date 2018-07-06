@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Cukmekerb's Coding Class</title>
  <style>
   .fa,.w3-hover-opacity,.w3-third{cursor:pointer}
- </style><head>
+ </style>
 <meta charset="UTF-8">
  <link rel="shortcut icon" href="https://addons.cdn.mozilla.net/user-media/userpics/13/13697/13697600.png?modified=1523290245">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +19,11 @@
           enable_page_level_ads: true
      });
 </script>
-</head>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
+</head>
 <body class="w3-dark-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -65,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
    </div>
   </header>
   <br>
-  <div onmouseover="$( '#aboutbutton' ).removeClass( 'w3-text-teal' ); $( '#vidbutton' ).addClass( 'w3-text-teal' );">
+  <section onmouseover="$( '#aboutbutton' ).removeClass( 'w3-text-teal' ); $( '#vidbutton' ).addClass( 'w3-text-teal' );">
   <!-- First Photo Grid-->
   <div class="w3-third w3-container">
       <img src="https://i.ytimg.com/vi/6DUdt7I4CAw/maxresdefault.jpg" alt="DuckDuckGo stuff" style="width:100%" class="w3-hover-opacity" onclick='window.location="https://www.youtube.com/watch?v=6DUdt7I4CAw"'>
@@ -194,14 +196,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>DOWNLOAD FILES!!!</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Pagination -->
 
 
   <!-- Images of Me -->
 
-<section id='about' onmouseover="$( '#aboutbutton' ).addClass( 'w3-text-teal' ); $( '#vidbutton' ).removeClass( 'w3-text-teal' );">
+<section id='about' onmouseover="$( '#aboutbutton' ).addClass( 'w3-text-teal' ); $( '#vidbutton' ).removeClass( 'w3-text-teal' );" onmouseout="$( '#aboutbutton' ).removeClass( 'w3-text-teal' ); $( '#vidbutton' ).addClass( 'w3-text-teal' );">
 
   <div class="w3-container w3-padding-large w3-margin-left" style="margin-bottom:32px; ">
     <h4 id='abootme'><b>About Me</b></h4>
