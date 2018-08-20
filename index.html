@@ -4,6 +4,13 @@
 <title>Cukmekerb's Coding Class</title>
  <style>
   .fa,.w3-hover-opacity,.w3-third{cursor:pointer}
+  ::-webkit-scrollbar{
+  background-color: #152114;
+  width: 20px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background-color: #500b72;
+  }
  </style>
 <meta charset="UTF-8">
  <link rel="shortcut icon" href="https://addons.cdn.mozilla.net/user-media/userpics/13/13697/13697600.png?modified=1523290245">
@@ -72,11 +79,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <br>
   <section onmouseover="$( '#aboutbutton' ).removeClass( 'w3-text-teal' ); $( '#vidbutton' ).addClass( 'w3-text-teal' );">
   <!-- First Photo Grid-->
+  <div class="w3-third w3-container">
+      <img src="https://i.ytimg.com/vi/nzUKP8yJD_g/maxresdefault.jpg" alt="JavaScript stuff" style="width:100%" class="w3-hover-opacity" onclick='window.location="https://www.youtube.com/watch?v=nzUKP8yJD_g"'>
+      <div class="w3-container w3-white">
+        <p><b>How to use change the scollbar with CSS</b></p>
+        <p>Look at this page's scrollbar from chrome safari or opera. Learn how you can make one just like it.</p>
+      </div>
+    </div>
      <div class="w3-third w3-container">
       <img src="https://i.ytimg.com/vi/UufDvxbHeJA/maxresdefault.jpg" alt="JavaScript stuff" style="width:100%" class="w3-hover-opacity" onclick='window.location="https://www.youtube.com/watch?v=UufDvxbHeJA"'>
       <div class="w3-container w3-white">
         <p><b>How to use the Minecraft Pi Edition API</b></p>
-        <p>MAKE HUGE HOLES</p>
+        <p>DIG HUGE HOLES</p>
       </div>
     </div>
    <div class="w3-third w3-container">
@@ -322,3 +336,4 @@ function w3_close() {
 </body>
 </html>
  <!-- hi There this page was updated on august 16th to fix an ad bug --!>
+
