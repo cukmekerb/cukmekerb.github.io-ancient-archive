@@ -1,0 +1,9 @@
+for the video:
+<meta property="og:video" content="https://tebahpla.github.io/stuff/Full.mp4" />
+<meta property="og:video:type" content="video/mp4" />
+<meta property="og:video:width" content="1280" />
+<meta property="og:video:height" content="720" />
+for the image:
+<meta content="https://github.com/tebahpla/tebahpla.github.io/blob/master/alternite_logos/bounceoogle.png?raw=true" itemprop="image" draggable="true">
+for the description:
+<meta name="description" content="">
