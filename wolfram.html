@@ -1,0 +1,9 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<h1 id="answer" onclick="answer()">MIAMAI</h1>
+<script>
+function answer(q){
+$.ajax({ url:"http://api.wolframalpha.com/v1/result?appid=AKLHUK-89XL2P7QLR&i=how%20far%20is%20new%20york%20from%20miami", success: function(data){
+document.getElementById("answer").innerHTML=data;
+}});
+}
+</script>
