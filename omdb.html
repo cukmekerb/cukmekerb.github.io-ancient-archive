@@ -1,0 +1,25 @@
+
+
+
+  <input onkeyup='getanswer(document.getElementById("qurybox").value)' id='qurybox'></input>
+<div id='answer' class='hiding'></div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script >
+      var b;
+function getanswer(q){
+$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(a) {
+document.getElementById('answer').innerHTML=JSON.stringify(a);
+var c =innerHTML=JSON.stringify(a);
+b = JSON.parse(a);
+document.getElementById('answer').innerHTML=JSON.stringify(a)+" "+b;
+     
+});
+}
+    </script>
+
+
+
+  
