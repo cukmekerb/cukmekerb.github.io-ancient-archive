@@ -8,13 +8,16 @@
   
 
     <script >
-      var b;
+      var data;
 function getanswer(q){
-$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(a) {
-document.getElementById('answer').innerHTML=JSON.stringify(a);
-var c =innerHTML=JSON.stringify(a);
-b = JSON.parse(a);
-document.getElementById('answer').innerHTML=JSON.stringify(a)+" "+b;
+$.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(rawdata) {
+
+var rawstring =innerHTML=JSON.stringify(rawdata);
+data = JSON.parse(c);
+var title = data.Search[0].Title;
+var year = data.Search[0].Year;
+var imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/"
+document.getElementById('answer').innerHTML=b.Search[0].Title;
      
 });
 }
