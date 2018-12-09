@@ -1,17 +1,11 @@
 <!doctype html>
  <script src="https://www.w3schools.com/lib/w3.js"></script> 
 <script>
-function getcatfact(){
+function getadvice(){
 w3.getHttpObject("https://api.adviceslip.com/advice", function(data){
-data=JSON.parse(data)
-fact=data.slip.advice
-alert(fact)
+advice=data.slip.advice
+alert(advice)
 });
 }
 </script>
-<button onclick="getcatfact()">get a fact</button>
-
-
-
-
-  
+<button onclick="getadvice()" >get some advice</button>
