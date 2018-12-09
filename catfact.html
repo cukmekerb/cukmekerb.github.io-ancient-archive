@@ -1,11 +1,17 @@
+<!doctype html>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script>
 function getcatfact(){
-$.ajax(url:"https://cat-fact.herokuapp.com/facts/random", success:function(data){
+$.get("https://cat-fact.herokuapp.com/facts/random", function(data){
 data=JSON.parse(data)
 fact=data.text
 alert(fact)
 });
-};
+}
 </script>
 <button onclick="getcatfact()">get a fact</button>
+
+
+
+
+  
