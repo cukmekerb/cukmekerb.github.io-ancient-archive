@@ -5,7 +5,7 @@ $.ajax(url:"https://cat-fact.herokuapp.com/facts/random", success:function(data)
 data=JSON.parse(data)
 fact=data.text
 alert(fact)
-}
 });
+};
 </script>
 <button onclick="getcatfact()">get a fact</button>
