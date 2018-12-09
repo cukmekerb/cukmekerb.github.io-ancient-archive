@@ -2,9 +2,9 @@
  <script src="https://www.w3schools.com/lib/w3.js"></script> 
 <script>
 function getcatfact(){
-w3.getHttpObject("https://cat-fact.herokuapp.com/facts/random", function(data){
+w3.getHttpObject("https://api.adviceslip.com/advice", function(data){
 data=JSON.parse(data)
-fact=data.text
+fact=data.slip.advice
 alert(fact)
 });
 }
